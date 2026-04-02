@@ -1,3 +1,4 @@
+/* Base layout */
 body {
   font-family: system-ui;
   background: #0f172a;
@@ -8,6 +9,7 @@ body {
   height: 100vh;
 }
 
+/* Modal container */
 .modal {
   background: #1e293b;
   padding: 24px;
@@ -16,6 +18,7 @@ body {
   text-align: center;
 }
 
+/* Crypto selection buttons */
 .crypto-list {
   display: flex;
   flex-wrap: wrap;
@@ -50,6 +53,7 @@ body {
   background: #3b82f6;
 }
 
+/* QR canvas */
 canvas {
   margin: 16px 0;
   background: white;
@@ -57,18 +61,62 @@ canvas {
   border-radius: 12px;
 }
 
+/* Address + Copy section */
 .address-box {
   display: flex;
-  gap: 8px;
+  gap: 10px;
+  background: #1e293b;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid #334155;
+  align-items: center;
 }
 
-input {
+/* Address input styled like a display field */
+.address-box input {
   flex: 1;
-  padding: 8px;
-  border-radius: 8px;
+  padding: 10px 14px;
+  border-radius: 999px;
   border: none;
+  background: #0f172a;
+  color: #e2e8f0;
+  font-family: monospace;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  outline: none;
+  transition: 0.2s ease;
 }
 
-button {
-  cursor: pointer;
+.address-box input:hover {
+  background: #1a2540;
+}
+
+/* Copy button styled to match crypto-btn aesthetic */
+#copyBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 16px;
+  border-radius: 999px;
+  border: none;
+  background: #3b82f6;
+  color: white;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+#copyBtn:hover {
+  background: #60a5fa;
+  transform: translateY(-1px);
+}
+
+#copyBtn:active {
+  background: #2563eb;
+  transform: translateY(0);
+}
+
+/* Optional: success feedback animation */
+#copyBtn.copied {
+  background: #22c55e !important;
+  box-shadow: 0 0 10px #22c55e55;
 }
