@@ -2,12 +2,14 @@ import "./styles.css";
 import QRCode from "qrcode";
 import { cryptos } from "./donation";
 
-const cryptoList = document.getElementById("cryptoList");
+// Explicitly assert element types so TS knows they are not null
+const cryptoList = document.getElementById("cryptoList") as HTMLElement;
 const qrCanvas = document.getElementById("qrCanvas") as HTMLCanvasElement;
 const addressInput = document.getElementById("addressInput") as HTMLInputElement;
-const cryptoTitle = document.getElementById("cryptoTitle");
-const copyBtn = document.getElementById("copyBtn");
+const cryptoTitle = document.getElementById("cryptoTitle") as HTMLElement;
+const copyBtn = document.getElementById("copyBtn") as HTMLButtonElement;
 
+// Runtime safety check (optional but good practice)
 if (!cryptoList || !cryptoTitle || !copyBtn) {
   throw new Error("Missing required DOM elements");
 }
@@ -48,7 +50,7 @@ async function updateUI() {
   cryptoTitle.textContent = selectedCrypto.name;
   addressInput.value = selectedCrypto.address;
 
-  // ✅ Generate QR code first
+  // Generate QR code
   await QRCode.toCanvas(qrCanvas, selectedCrypto.address, {
     margin: 2,
     width: 220
@@ -57,22 +59,20 @@ async function updateUI() {
   const ctx = qrCanvas.getContext("2d");
   if (!ctx) return;
 
-  // ✅ Load SVG logo
+  // Load logo
   const img = new Image();
   img.src = selectedCrypto.icon;
 
   img.onload = () => {
     const canvasSize = qrCanvas.width;
-    const logoSize = canvasSize * 0.25; // 25% of QR size
+    const logoSize = canvasSize * 0.25;
 
     const x = (canvasSize - logoSize) / 2;
     const y = (canvasSize - logoSize) / 2;
 
-    // ✅ White background for better scan reliability
     ctx.fillStyle = "white";
     ctx.fillRect(x - 4, y - 4, logoSize + 8, logoSize + 8);
 
-    // ✅ Draw logo on top of QR
     ctx.drawImage(img, x, y, logoSize, logoSize);
   };
 
