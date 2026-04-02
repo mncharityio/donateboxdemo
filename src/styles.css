@@ -1,0 +1,74 @@
+body {
+  font-family: system-ui;
+  background: #0f172a;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.modal {
+  background: #1e293b;
+  padding: 24px;
+  border-radius: 16px;
+  width: 420px;
+  text-align: center;
+}
+
+.crypto-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 16px;
+  justify-content: center;
+}
+
+.crypto-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: #334155;
+  cursor: pointer;
+  border: none;
+  color: white;
+  transition: 0.2s ease;
+}
+
+.crypto-btn img {
+  width: 18px;
+  height: 18px;
+}
+
+.crypto-btn:hover {
+  background: #475569;
+}
+
+.crypto-btn.active {
+  background: #3b82f6;
+}
+
+canvas {
+  margin: 16px 0;
+  background: white;
+  padding: 10px;
+  border-radius: 12px;
+}
+
+.address-box {
+  display: flex;
+  gap: 8px;
+}
+
+input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+}
+
+button {
+  cursor: pointer;
+}
