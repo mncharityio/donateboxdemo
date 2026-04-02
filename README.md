@@ -2,9 +2,15 @@ This is a demo for the step by step guide on the blog for Webmandor: https://blo
 
 This incclude dockerfile and docker-compose.yml file to sete up the code with a click of a button using dokploy and github.
 
+### Hosted With
+
 This project is hosted with [Hostinger](https://www.hostinger.com/dk?REFERRALCODE=XKJROCKMEDHA) Save 20%
 
+## Webmandor
+
 If you already a developer please feel free to take use of our free tools at: https://webmandor.com
+
+### Tools
 
 - DNS Tools
 - IP Tools
@@ -19,5 +25,7 @@ If you already a developer please feel free to take use of our free tools at: ht
 - Finance Calculators
 - Date/Time Tools
 - Video Tools - All from converters to trimmers.
+
+## Support Us!
 
 To support this project please feel free to use the on site donation option or take use of any of the proton and other service affiliate links (Not all links at https://webmandor.com/services include an affiliate link)
