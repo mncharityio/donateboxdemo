@@ -1,3 +1,5 @@
+# Welcome To Crypto Donation Box Demo
+
 This is a demo for the step by step guide on the blog for Webmandor: https://blog.webmandor.com/how-to-build-a-modern-crypto-donation-page-with-typescript-qr-codes-svg-logos-clean-ui/
 
 This incclude dockerfile and docker-compose.yml file to sete up the code with a click of a button using dokploy and github.
