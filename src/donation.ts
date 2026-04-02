@@ -4,6 +4,7 @@ import btcIcon from "./assets/btc.svg";
 import ethIcon from "./assets/eth.svg";
 import ltcIcon from "./assets/ltc.svg";
 import dogeIcon from "./assets/doge.svg";
+import trxIcon from "./assets/trx.svg";
 
 export const cryptos: Crypto[] = [
   {
@@ -29,5 +30,11 @@ export const cryptos: Crypto[] = [
     symbol: "DOGE",
     address: "DCeviGVcndAYSBbT68btMo7vqkCGyRw6W6",
     icon: dogeIcon
+  },
+  {
+    name: "Troncoin",
+    symbol: "TRX",
+    address: "TFxxUbb2igjBHeQ1HxFgKgZE7yosH85iCb",
+    icon: trxIcon
   }
 ];
