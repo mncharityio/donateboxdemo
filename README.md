@@ -4,6 +4,8 @@ This is a demo for the step by step guide on the blog for Webmandor: https://blo
 
 This incclude dockerfile and docker-compose.yml file to sete up the code with a click of a button using dokploy and github.
 
+Feel free to download this and build on to it for your own website or use.
+
 ### Hosted With
 
 This project is hosted with [Hostinger](https://www.hostinger.com/dk?REFERRALCODE=XKJROCKMEDHA) Save 20%
