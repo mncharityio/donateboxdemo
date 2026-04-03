@@ -1,12 +1,5 @@
 import type { Crypto } from "./types"; 
 
-import btcIcon from "./assets/btc.svg";
-import ethIcon from "./assets/eth.svg";
-import ltcIcon from "./assets/ltc.svg";
-import dogeIcon from "./assets/doge.svg";
-import trxIcon from "./assets/trx.svg";
-import bchIcon from "./assets/bch.svg";
-import solIcon from "./assets/sol.svg";
 
 export const cryptos: Crypto[] = [
   {
